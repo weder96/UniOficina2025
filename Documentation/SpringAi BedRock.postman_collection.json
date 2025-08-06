@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "769c68a1-e1ec-4eee-befe-9938c3a82158",
+		"name": "SpringAi BedRock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2398177",
+		"_collection_link": "https://red-star-406222.postman.co/workspace/KriaDevsWorks~d8d0e92f-1627-4ad1-a0c9-4a5c98703e18/collection/2398177-769c68a1-e1ec-4eee-befe-9938c3a82158?action=share&source=collection_link&creator=2398177"
+	},
+	"item": [
+		{
+			"name": "BedRockAI",
+			"item": [
+				{
+					"name": "Informations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstore/informations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstore",
+								"informations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chat Response Informations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstore/chat/informations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstore",
+								"chat",
+								"informations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Streams Informations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstore/stream/informations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstore",
+								"stream",
+								"informations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chat Response Streams Informations Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bookstore/chat/stream/informations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookstore",
+								"chat",
+								"stream",
+								"informations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reviewa",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "describe City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/city/describe?message=Anápolis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"describe"
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "Anápolis"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actor",
+			"item": [
+				{
+					"name": "get String",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actor/films-string",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actor",
+								"films-string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "films Pojo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actor/films",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actor",
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Parametized",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actor/films-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actor",
+								"films-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get With Param",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/actor/films-by-actor?actor=Keanu Reeves",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actor",
+								"films-by-actor"
+							],
+							"query": [
+								{
+									"key": "actor",
+									"value": "Keanu Reeves"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Memory",
+			"item": [
+				{
+					"name": "getMemoryAdvisor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/memory/chat?message=describe chatGpt 4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"memory",
+								"chat"
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "describe chatGpt 4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "Describe Image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/detection/image-to-text",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"detection",
+								"image-to-text"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GenerateImage",
+			"item": [
+				{
+					"name": "getImage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/generate/image?description=crie imagem de um cachorrinho chupando picolé",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"generate",
+								"image"
+							],
+							"query": [
+								{
+									"key": "description",
+									"value": "crie imagem de um cachorrinho chupando picolé"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BedrockSdk",
+			"item": [
+				{
+					"name": "chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bedrock/sdk/chat?prompt=Tell me a dad joke about dogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bedrock",
+								"sdk",
+								"chat"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "Tell me a dad joke about dogs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chat Stream",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bedrock/sdk/chat/stream?prompt=Tell me a dad joke about dogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bedrock",
+								"sdk",
+								"chat",
+								"stream"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "Tell me a dad joke about dogs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invokeModel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bedrock/sdk/chat/invokeModel?prompt=Tell me a dad joke about dogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bedrock",
+								"sdk",
+								"chat",
+								"invokeModel"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "Tell me a dad joke about dogs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invokeModelWithResponseStream",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/bedrock/sdk/chat/invokeModelWithResponseStream?prompt=Defina o aws bedrock para mim e seus usos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bedrock",
+								"sdk",
+								"chat",
+								"invokeModelWithResponseStream"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "Defina o aws bedrock para mim e seus usos"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/chat/?message=\"What sports are being included in the 2024 Summer Olympics?\"",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								""
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "\"What sports are being included in the 2024 Summer Olympics?\""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
